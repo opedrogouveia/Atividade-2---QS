@@ -25,6 +25,7 @@ def test_transferencia_sem_descricao_ok(driver): # Caminho Feliz
     driver.find_element(By.NAME, "name").send_keys("João Silva")
     driver.find_element(By.XPATH, '//*[@id="__next"]/div/div[2]/div/div[2]/form/div[4]/div/input').send_keys("senhadojoao2")
     driver.find_element(By.NAME, "passwordConfirmation").send_keys("senhadojoao2")
+    time.sleep(0.2)
     driver.find_element(By.XPATH , '//*[@id="toggleAddBalance"]').click()
     driver.find_element(By.CSS_SELECTOR, ".CMabB").click()
     time.sleep(0.2)
